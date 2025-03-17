@@ -1,3 +1,16 @@
 {
-  "rewrites": [{ "source": "/", "destination": "./Pages/HomePage.html" }]
+  "version": 2,
+  "routes": [
+    {
+      "src": "/",
+      "dest": "/Pages/Homepage.html"
+    }
+  ],
+  "builds": [
+    {
+      "src": "Pages/**/*.html",
+      "use": "@vercel/static"
+    }
+  ]
 }
+
