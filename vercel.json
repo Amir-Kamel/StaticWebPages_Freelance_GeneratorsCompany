@@ -1,16 +1,17 @@
 {
   "version": 2,
   "routes": [
-    {
-      "src": "/",
-      "dest": "/Pages/Homepage.html"
-    }
+    { "src": "/", "dest": "/Pages/Homepage.html" }
   ],
   "builds": [
-    {
-      "src": "Pages/**/*.html",
-      "use": "@vercel/static"
-    }
-  ]
+    { "src": "Pages/**/*.html", "use": "@vercel/static" },
+    { "src": "assets/stylesheet/**/*.css", "use": "@vercel/static" },
+    { "src": "assets/javascript/**/*.js", "use": "@vercel/static" },
+    { "src": "assets/images/**/*", "use": "@vercel/static" }
+  ],
+  "static": {
+    "directory": "Pages",
+    "public": "assets"
+  }
 }
 
