@@ -1,1 +1,0 @@
-# S_Generators_Company

@@ -1,29 +1,11 @@
 {
   "version": 2,
   "routes": [
-    { "src": "/", "dest": "/Pages/Homepage.html" },
-    { "src": "/About", "dest": "/Pages/About.html" },
-    { "src": "/Contact", "dest": "/Pages/Contact.html" },
-    { "src": "/CustomerService", "dest": "/Pages/CustomerService.html" },
-    { "src": "/FAQ", "dest": "/Pages/FAQ.html" },
-    { "src": "/Footer", "dest": "/Pages/Footer.html" },
-    { "src": "/header", "dest": "/Pages/header.html" },
-    { "src": "/product", "dest": "/Pages/product.html" },
-    { "src": "/Services", "dest": "/Pages/Services.html" },
-    { "src": "/(.*)", "dest": "/Pages/$1.html" }
-  ],
-  "rewrites": [
-    { "source": "/About", "destination": "/Pages/About.html" },
-    { "source": "/Contact", "destination": "/Pages/Contact.html" },
-    { "source": "/CustomerService", "destination": "/Pages/CustomerService.html" },
-    { "source": "/FAQ", "destination": "/Pages/FAQ.html" },
-    { "source": "/Footer", "destination": "/Pages/Footer.html" },
-    { "source": "/header", "destination": "/Pages/header.html" },
-    { "source": "/product", "destination": "/Pages/product.html" },
-    { "source": "/Services", "destination": "/Pages/Services.html" }
+    { "src": "/", "dest": "/Homepage.html" },
+    { "src": "/(.*)", "dest": "/$1.html" }
   ],
   "builds": [
-    { "src": "Pages/**/*.html", "use": "@vercel/static" },
+    { "src": "*.html", "use": "@vercel/static" },
     { "src": "assets/stylesheet/**/*.css", "use": "@vercel/static" },
     { "src": "assets/javascript/**/*.js", "use": "@vercel/static" },
     { "src": "assets/images/**/*", "use": "@vercel/static" }
