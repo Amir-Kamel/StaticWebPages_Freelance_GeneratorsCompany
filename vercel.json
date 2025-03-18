@@ -8,10 +8,6 @@
     { "src": "assets/stylesheet/**/*.css", "use": "@vercel/static" },
     { "src": "assets/javascript/**/*.js", "use": "@vercel/static" },
     { "src": "assets/images/**/*", "use": "@vercel/static" }
-  ],
-  "static": {
-    "directory": "Pages",
-    "public": "assets"
-  }
+  ]
 }
 
