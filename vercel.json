@@ -10,8 +10,8 @@
     { "src": "/header", "dest": "/Pages/header.html" },
     { "src": "/product", "dest": "/Pages/product.html" },
     { "src": "/Services", "dest": "/Pages/Services.html" },
-    { "src": "/assets/(.*)", "dest": "/assets/$1" },
-    { "src": "/(.*)", "dest": "/Pages/Homepage.html" }
+    { "src": "/Pages/(.*)", "dest": "/Pages/$1" },
+    { "src": "/assets/(.*)", "dest": "/assets/$1" }
   ],
   "builds": [
     { "src": "Pages/**/*.html", "use": "@vercel/static" },
