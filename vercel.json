@@ -10,6 +10,7 @@
     { "src": "/header", "dest": "/Pages/header.html" },
     { "src": "/product", "dest": "/Pages/product.html" },
     { "src": "/Services", "dest": "/Pages/Services.html" },
+    { "src": "/assets/(.*)", "dest": "/assets/$1" },
     { "src": "/(.*)", "dest": "/Pages/Homepage.html" }
   ],
   "builds": [
