@@ -1,23 +1,21 @@
 document.addEventListener("DOMContentLoaded", function () {
 
-  async function loadHomepageContent() {
+  async function loadContent(url, elementId) {
     try {
-      const response = await fetch("/Homepage.html");
-      if (!response.ok) throw new Error("Failed to load Homepage content");
-
+      const response = await fetch(url);
       const data = await response.text();
-      const homepageContainer = document.getElementById("homepage-content");
-      
-      if (homepageContainer) {
-        homepageContainer.innerHTML = data;
-      } else {
-        console.warn("Homepage container not found!");
-      }
+      document.getElementById(elementId).innerHTML = data;
     } catch (error) {
-      console.error("Error loading homepage:", error);
+      console.error("Error loading content:", error);
     }
   }
 
-  // Load homepage content dynamically
-  loadHomepageContent();
+  // Load navigation and footer, then initialize search functionality
+  (async function () {
+    await loadContent("header.html", "header");
+
+    await loadContent("Footer.html", "footer");
+    // Initialize search functionality after navigation content is loaded
+  })();
+
 });

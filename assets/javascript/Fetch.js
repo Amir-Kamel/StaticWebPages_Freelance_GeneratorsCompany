@@ -2,26 +2,18 @@ document.addEventListener("DOMContentLoaded", function () {
 
     async function loadContent(url, elementId) {
         try {
-            const element = document.getElementById(elementId);
-            if (!element) {
-                console.warn(`Element with ID "${elementId}" not found.`);
-                return;
-            }
-  
-            const response = await fetch(url);
-            if (!response.ok) throw new Error(`Failed to load ${url}`);
-  
-            const data = await response.text();
-            element.innerHTML = data;
+          const response = await fetch(url);
+          const data = await response.text();
+          document.getElementById(elementId).innerHTML = data;
         } catch (error) {
-            console.error(`Error loading ${url}:`, error);
+          console.error("Error loading content:", error);
         }
-    }
-  
-    // Load header and footer dynamically (New Paths)
+      }
+
+    // Load navigation and footer, then initialize search functionality
     (async function () {
-        await loadContent("/header.html", "nav"); // Load header into <nav>
-        await loadContent("/Footer.html", "footer"); // Load footer into <footer>
+      await loadContent("header.html", "nav");
+      await loadContent("Footer.html", "footer");
+      // Initialize search functionality after navigation content is loaded
     })();
   });
-  

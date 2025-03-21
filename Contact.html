@@ -6,45 +6,47 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Contact Us</title>
 
-    <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
 
-    <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet" />
     <link href="https://fonts.googleapis.com/css?family=Niconne" rel="stylesheet" />
     <link href="https://fonts.googleapis.com/css?family=Inter" rel="stylesheet" />
 
-    <!-- Custom CSS -->
     <link rel="stylesheet" href="./assets/stylesheet/Contact.css" />
-    <link rel="stylesheet" href="./assets/stylesheet/services.css">
-
-    <!-- Custom JS -->
     <script src="./assets/javascript/contact.js"></script>
+    <link rel="stylesheet" href="../assests/stylesheet/services.css">
     <script src="./assets/javascript/spinner.js"></script>
     <script src="./assets/javascript/performance.js"></script>
 </head>
 
 <body>
-    <!-- Navbar -->
+    <!-- <div id="overlay">
+        <div id="loadingSpinner">
+            <img src="/S_Generators_Company/assests/images/شركة المولدات.png" alt="Loading...">
+        </div>
+    </div> -->
+    <!-- Start Navbar -->
     <div id="nav"></div>
-
+    <!-- end Navbar -->
     <div class="cover-section">
-        <div id="hader-title">Contact Us</div>
+        <div id="hader-title">
+            Contact Us
+        </div>
+
         <h4>
             <nav aria-label="breadcrumb">
                 <ol class="breadcrumb">
                     <li class="breadcrumb-item"><a href="Homepage.html">Home</a></li>
-                    <li class="breadcrumb-item active" aria-current="page">Contact Us</li>
+                    <li class="breadcrumb-item active" aria-current="page">ContactUs</li>
                 </ol>
             </nav>
         </h4>
     </div>
-
-    <!-- Body -->
+    <!-- body -->
     <div class="container my-5">
         <div class="contactus">
-            <!-- Contact Title -->
+            <!-- contact title -->
             <div class="section-title">
                 <img src="./assets/images/leftarrows.png" class="arrow" alt="left arrow">
                 <h2>Contact Us</h2>
@@ -53,18 +55,20 @@
         </div>
 
         <div class="row">
-            <!-- Location and Contact -->
+            <!-- location and contact -->
             <div class="col-md-12 mb-4">
-                <!-- Location Frame -->
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3456.5767594415614!2d30.998460915012104!3d30.80190347942016!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14f7c99d5ba18c4f%3A0x7ffb41d24ac7b9a0!2sEdraaK%20BooKStore!5e0!3m2!1sen!2seg!4v1680584451703!5m2!1sen!2seg"
+                <!-- location frame -->
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3456.5767594415614!2d30.998460915012104!3d30.80190347942016!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14f7c99d5ba18c4f%3A0x7ffb41d24ac7b9a0!2sEdraaK%20BooKStore!5e0!3m2!1sen!2seg!4v1680584451703!5m2!1sen!2seg"
                     width="100%" height="300" allowfullscreen="">
                 </iframe>
             </div>
+            <!-- end location frame -->
 
             <div class="container text-center my-5">
                 <div class="section-title">
                     <img src="./assets/images/leftarrows.png" class="arrow" alt="left arrow">
-                    <h2>Contact Us Details</h2>
+                    <h2>Contact Us Details </h2>
                     <img src="./assets/images/arrows.png" class="arrow" alt="right arrow">
                 </div>
                 <p>Get in touch with our team.</p>
@@ -89,8 +93,8 @@
                             <div class="icon-box bg-primary">
                                 <i class="fas fa-clock fs-2 text-light"></i>
                             </div>
-                            <h5><strong>Opening Hours</strong></h5>
-                            <p class="text-muted">Mon - Sat 10:00 - 18:00</p>
+                            <h5><strong>Opening Hour</strong></h5>
+                            <p class="text-muted">Mon - Sat 10.00 - 18.00</p>
                         </div>
                     </div>
 
@@ -119,17 +123,26 @@
                     </div>
                 </div>
             </div>
+
+            <!--end contact -->
         </div>
+        <!-- end location and contact -->
+
+
+
     </div>
 
+
+    <!-- body -->
+
+    <!-- footer -->
     <!-- Footer -->
     <footer id="footer" class="mt-auto w-100 m-0 p-0"></footer>
-
-    <!-- Bootstrap JS -->
+    <!-- end footer -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="./assests/javascript/Fetch.js"></script>
 
-    <!-- Custom JS -->
-    <script src="./assets/javascript/Fetch.js"></script>
+
 </body>
 
 </html>
