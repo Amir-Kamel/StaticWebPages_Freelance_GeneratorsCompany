@@ -6,9 +6,9 @@
   ],
   "builds": [
     { "src": "*.html", "use": "@vercel/static" },
-    { "src": "assets/stylesheet/**/*.css", "use": "@vercel/static" },
-    { "src": "assets/javascript/**/*.js", "use": "@vercel/static" },
-    { "src": "assets/images/**/*", "use": "@vercel/static" }
+    { "src": "assests/stylesheet/**/*.css", "use": "@vercel/static" },
+    { "src": "assests/javascribt/**/*.js", "use": "@vercel/static" },
+    { "src": "assests/images/**/*", "use": "@vercel/static" }
   ]
 }
 
